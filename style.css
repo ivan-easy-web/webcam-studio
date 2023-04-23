@@ -114,6 +114,12 @@ span a {
 .top-nav-container {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+
+    box-shadow: 0 0 16px 1px #d848e0;
+    border-bottom: 1px solid #d848e0;
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0.428);
 }
 
 .top-nav {
