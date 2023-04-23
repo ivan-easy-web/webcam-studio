@@ -39,6 +39,7 @@ span a {
 
 .top-nav-container {
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .top-nav {
@@ -224,6 +225,7 @@ input:focus {
 
 .image-container .blur {
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     position: absolute;
     right: 0;
     bottom: 0;
