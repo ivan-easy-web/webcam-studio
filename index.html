@@ -11,14 +11,38 @@
 </head>
 
 <body>
-    <div class="sticky-top top-nav-container">
+    <div class="menu" id="menu">
+        <div class="nav-list d-flex flex-column align-items-center justify-content-end">
+            <a href="#">О студии</a>
+            <a href="#block-3">Условия</a>
+            <a href="#block-4">Рассчитать зарплату</a>
+            <a href="#block-5">Анкета</a>
+            <a href="#contacts">Контакты</a>
+
+            <button onclick="closeMenu()" class="menu-button-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="d-block d-sm-none">
+        <button onclick="openMenu()" class="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+    </div>
+
+    <div class="sticky-top top-nav-container d-none d-sm-block">
         <div class="top-nav container">
-            <a href="#">
+            <a href="#" style="margin-right: 20px;">
                 <div class="logo-placeholder">
                     <img src="img/logo.png">
                 </div>
             </a>
-            <div class="nav-container">
+            <div class="nav-container nav-list">
                 <a href="#">О студии</a>
                 <a href="#block-3">Условия</a>
                 <a href="#block-4">Рассчитать зарплату</a>
@@ -265,6 +289,5 @@
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>    <script src="script.js"></script>
 </body>

@@ -37,3 +37,15 @@ $('.calc-button-2').click(function() {
 });
 
 calc()
+
+
+
+let openMenu = () => {
+    $('#menu').fadeIn()
+}
+
+let closeMenu = () => {
+    $('#menu').fadeOut()
+}
+
+$('#menu a').click(() => {closeMenu()})

@@ -17,6 +17,75 @@ body {
 	}
 }
 
+.menu-button {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 4rem;
+    width: 4rem;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 4rem;
+
+    box-shadow: 0 0 16px 1px #d848e0;
+    border: 1px solid #d848e0;
+    color: white;
+
+    background-color: rgb(43, 43, 43);
+    padding: 0;
+}
+
+.menu {
+    position: fixed;
+    margin: 0 !important;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.menu .nav-list {
+    padding: 50px;
+    height: 100vh;
+}
+
+.menu a {
+    font-size: xx-large !important;
+    display: block;
+    font-weight: normal;
+    border-bottom: 2px solid white;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 0 !important;
+}
+
+.menu a:nth-child(5), .menu a:last-child   {
+    border-bottom: none;
+}
+
+.menu-button-close {
+    background-color: black;
+    height: 4rem;
+    width: 4rem;
+    
+    border-radius: 4rem;
+
+    border: 1px solid white;
+    color: white;
+
+    display: block;
+    margin-top: 20px;
+    padding: 0;
+
+}
+
+.menu a:active {
+    color: #d848e0;;
+
+} 
 .container {
 
 }
@@ -48,7 +117,7 @@ span a {
     display: flex;
 }
 
-.top-nav a{
+.nav-list a{
     color: white;
     text-decoration: none;
     font-size:  large;
@@ -97,6 +166,8 @@ span a {
 
     color: white;   
     margin-right: 10px;
+
+    display: block;
 }
 
 .button:hover {
