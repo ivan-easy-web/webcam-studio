@@ -44,6 +44,9 @@ body {
     top: 0;
     left: 0;
     z-index: 10000;
+
+    display: none;
+    
 }
 
 .menu .nav-list {
@@ -80,7 +83,7 @@ body {
     margin-top: 20px;
     padding: 0;
 
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 
 }
 
