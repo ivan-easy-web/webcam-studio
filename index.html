@@ -14,9 +14,9 @@
     <div class="menu" id="menu">
         <div class="nav-list d-flex flex-column align-items-center justify-content-end">
             <a href="#">О студии</a>
-            <a href="#block-3">Условия</a>
-            <a href="#block-4">Рассчитать зарплату</a>
-            <a href="#block-5">Анкета</a>
+            <a href="#conditions">Условия</a>
+            <a href="#calc">Рассчитать зарплату</a>
+            <a href="#form">Анкета</a>
             <a href="#contacts">Контакты</a>
 
             <button onclick="closeMenu()" class="menu-button-close">
@@ -27,7 +27,7 @@
         </div>
     </div>
 
-    <div class="d-block d-sm-none">
+    <div class="d-block d-md-none">
         <button onclick="openMenu()" class="menu-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -35,7 +35,7 @@
         </button>
     </div>
 
-    <div class="sticky-top top-nav-container d-none d-sm-block">
+    <div class="sticky-top top-nav-container d-none d-md-block">
         <div class="top-nav container">
             <a href="#" style="margin-right: 20px;">
                 <div class="logo-placeholder">
@@ -44,9 +44,9 @@
             </a>
             <div class="nav-container nav-list">
                 <a href="#">О студии</a>
-                <a href="#block-3">Условия</a>
-                <a href="#block-4">Рассчитать зарплату</a>
-                <a href="#block-5">Анкета</a>
+                <a href="#conditions">Условия</a>
+                <a href="#calc">Рассчитать зарплату</a>
+                <a href="#form">Анкета</a>
                 <a href="#contacts">Контакты</a>
             </div>
         </div>
@@ -56,26 +56,28 @@
         
 
         <div class="top-block block">
-            <h1>ЗАРАБАТЫВАЙ<br>
-                ОТ <span>1 830 000₽</span> В ГОД</h1>
-            <p style="margin-bottom: 20vh;">C лучшей студией в Набережных Челнах!</p>
-            <ul>
-                <li>
-                    <h4>Конфиденциальность</h4>
-                    <p><span>Гарантируем анонимность!</span> Платформы, с котороми мы работаем, ориентированны на англоязычную аудиторию!</p>
-                </li>
-                <li> 
-                    <h4>Обучение</h4>
-                    <p>Профессионально организованное обучение, тренинги и семинары <span>помогут вам освоиться в профессии.</span> </p>
-                </li>
-                <li>
-                    <h4>Поддержка</h4>
-                    <p><span>Постоянная поддержка</span> на всех стадиях вашей работы. Бесплатные беседы со специалистами, общение в кругу коллег! </p>
-                </li>
-            </ul>
-            <div class="d-sm-flex button-block d-block">
-                <a class="button" href="#block-5">Заполнить анкету</a>
-                <a class="button" href="#block-4">Рассчитать доход</a>
+            <div class="top-fade">
+                <h1>ЗАРАБАТЫВАЙ<br>
+                    ОТ <span>1 830 000₽</span> В ГОД</h1>
+                <p style="margin-bottom: 20vh;">C лучшей студией в Набережных Челнах!</p>
+                <ul>
+                    <li>
+                        <h4>Конфиденциальность</h4>
+                        <p><span>Гарантируем анонимность!</span> Платформы, с котороми мы работаем, ориентированны на англоязычную аудиторию!</p>
+                    </li>
+                    <li> 
+                        <h4>Обучение</h4>
+                        <p>Профессионально организованное обучение, тренинги и семинары <span>помогут вам освоиться в профессии.</span> </p>
+                    </li>
+                    <li>
+                        <h4>Поддержка</h4>
+                        <p><span>Постоянная поддержка</span> на всех стадиях вашей работы. Бесплатные беседы со специалистами, общение в кругу коллег! </p>
+                    </li>
+                </ul>
+                <div class="d-sm-flex button-block d-block">
+                    <a class="button" href="#block-5">Заполнить анкету</a>
+                    <a class="button" href="#block-4">Рассчитать доход</a>
+                </div>
             </div>
         </div>
 
@@ -99,7 +101,7 @@
             </ul>
         </div>
 
-        <div id="block-3" class="block">
+        <div id="conditions" class="block">
             <h1>Условия</h1>
             <div class="row">
                 <div class="col-12 col-sm-6 col-lg-3">
@@ -183,58 +185,69 @@
             </div>
         </div>
 
-        <div class="block calc-block" id="block-4">
+        <div class="block calc-block" id="calc">
             <h1>Рассчитать доход</h1>
 
-            <h3>Рабочих дней в неделю</h3>
-            <div class="button-row">
-                <button class="calc-button col-auto calc-button-active calc-button-1" value="4">
-                    4 дня
-                </button>
-                <button class="calc-button col-auto calc-button-1" value="5">
-                    5 дней
-                </button>
-                <button class="calc-button col-auto calc-button-1" value="6">
-                    6 дней
-                </button>
-            </div>
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <h3>Рабочих дней в неделю</h3>
+                    <div class="button-row">
+                        <button class="calc-button col-auto calc-button-active calc-button-1" value="4">
+                            4 дня
+                        </button>
+                        <button class="calc-button col-auto calc-button-1" value="5">
+                            5 дней
+                        </button>
+                        <button class="calc-button col-auto calc-button-1" value="6">
+                            6 дней
+                        </button>
+                    </div>
 
-            <h3>Рабочих часов в день</h3>
-            <div class="button-row">
-                <button class="calc-button col-auto calc-button-2" value="6">
-                    6 часов
-                </button>
-                <button class="calc-button col-auto calc-button-active calc-button-2" value="8">
-                    8 часов
-                </button>
-            </div>
+                    <h3>Рабочих часов в день</h3>
+                    <div class="button-row">
+                        <button class="calc-button col-auto calc-button-2" value="6">
+                            6 часов
+                        </button>
+                        <button class="calc-button col-auto calc-button-active calc-button-2" value="8">
+                            8 часов
+                        </button>
+                    </div>
 
-            <h3>Ваш доход</h3>
-            <div class="button-row">
-                <div class="calc-result-block">
-                    <p>В неделю:</p>
-                    <p class="calc-button col-auto" id="weekField">
-                        32 000₽
-                    </p>
-                </div>
-                
-                <div class="calc-result-block">
-                    <p>В месяц:</p>
-                    <p class="calc-button col-auto" id="monthField">
-                        128 000₽
-                    </p>
-                </div>
+                    <h3>Ваш доход</h3>
+                    <div class="button-row">
+                        <div class="calc-result-block">
+                            <p>В неделю:</p>
+                            <p class="calc-button col-auto" id="weekField">
+                                32 000₽
+                            </p>
+                        </div>
+                        
+                        <div class="calc-result-block">
+                            <p>В месяц:</p>
+                            <p class="calc-button col-auto" id="monthField">
+                                128 000₽
+                            </p>
+                        </div>
 
-                <div class="calc-result-block">
-                    <p>В год:</p>
-                    <p class="calc-button col-auto" id="yearField">
-                        2 1536 000₽
-                    </p>
+                        <div class="calc-result-block">
+                            <p>В год:</p>
+                            <p class="calc-button col-auto" id="yearField">
+                                2 1536 000₽
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-0 col-lg-4 d-none d-lg-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 10 15">
+                        <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                    </svg>
                 </div>
             </div>
+            
         </div>
 
-        <div class="block" id="block-5">
+        <div class="block" id="form">
             <div class="row align-items-center vh-block">
                 <div class="col-0 col-lg-8 d-none d-lg-block">
                     <div class="image-container">
