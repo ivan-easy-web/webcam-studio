@@ -11,19 +11,25 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="top-nav">
-            <a href="">
+    <div class="sticky-top top-nav-container">
+        <div class="top-nav container">
+            <a href="#">
                 <div class="logo-placeholder">
                     <img src="img/logo.png">
                 </div>
             </a>
             <div class="nav-container">
-                <a href="">Преимущества</a>
-                <a href="">Сколько я заработаю?</a>
-                <a href="">Контакты</a>
+                <a href="#">О студии</a>
+                <a href="#block-3">Условия</a>
+                <a href="#block-4">Рассчитать зарплату</a>
+                <a href="#block-5">Анкета</a>
+                <a href="#contacts">Контакты</a>
             </div>
         </div>
+    </div>
+
+    <div class="container">
+        
 
         <div class="top-block block">
             <h1>ЗАРАБАТЫВАЙ<br>
@@ -44,8 +50,8 @@
                 </li>
             </ul>
             <div class="d-sm-flex button-block d-block">
-                <a class="button">Заполнить анкету</a>
-                <a class="button">Рассчитать доход</a>
+                <a class="button" href="#block-5">Заполнить анкету</a>
+                <a class="button" href="#block-4">Рассчитать доход</a>
             </div>
         </div>
 
@@ -70,45 +76,195 @@
         </div>
 
         <div id="block-3" class="block">
+            <h1>Условия</h1>
             <div class="row">
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="info-box">
                         <div class="img">
-                            <img src="img/1.png">
+                            <img src="img/Group_44.svg">
                         </div>
                         <h4>Оплата</h4>
-                        <p>Текст</p>
+                        <p>Заработная плата от 108 000₽ с растущим процентом из месяца в месяц. Без потолка.</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="info-box">
                         <div class="img">
-                            <img src="img/1.png">
+                            <img src="img/Group_44.svg">
                         </div>
                         <h4>Оплата</h4>
-                        <p>Текст</p>
+                        <p>Заработная плата от 108 000₽ с растущим процентом из месяца в месяц. Без потолка.</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="info-box">
                         <div class="img">
-                            <img src="img/1.png">
+                            <img src="img/Group_44.svg">
                         </div>
                         <h4>Оплата</h4>
-                        <p>Текст</p>
+                        <p>Заработная плата от 108 000₽ с растущим процентом из месяца в месяц. Без потолка.</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="info-box">
                         <div class="img">
-                            <img src="img/1.png">
+                            <img src="img/Group_44.svg">
                         </div>
                         <h4>Оплата</h4>
-                        <p>Текст</p>
+                        <p>Заработная плата от 108 000₽ с растущим процентом из месяца в месяц. Без потолка.</p>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="block">
+            <h1>Бонусы</h1>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="info-box">
+                        <div class="img">
+                            <img src="img/Group_44.svg">
+                        </div>
+                        <h4>Оплата</h4>
+                        <p>Заработная плата от 108 000₽ с растущим процентом из месяца в месяц. Без потолка.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="info-box">
+                        <div class="img">
+                            <img src="img/Group_44.svg">
+                        </div>
+                        <h4>Оплата</h4>
+                        <p>Заработная плата от 108 000₽ с растущим процентом из месяца в месяц. Без потолка.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="info-box">
+                        <div class="img">
+                            <img src="img/Group_44.svg">
+                        </div>
+                        <h4>Оплата</h4>
+                        <p>Заработная плата от 108 000₽ с растущим процентом из месяца в месяц. Без потолка.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="info-box">
+                        <div class="img">
+                            <img src="img/Group_44.svg">
+                        </div>
+                        <h4>Оплата</h4>
+                        <p>Заработная плата от 108 000₽ с растущим процентом из месяца в месяц. Без потолка.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block calc-block" id="block-4">
+            <h1>Рассчитать доход</h1>
+
+            <h3>Рабочих дней в неделю</h3>
+            <div class="button-row">
+                <button class="calc-button col-auto calc-button-active calc-button-1" value="4">
+                    4 дня
+                </button>
+                <button class="calc-button col-auto calc-button-1" value="5">
+                    5 дней
+                </button>
+                <button class="calc-button col-auto calc-button-1" value="6">
+                    6 дней
+                </button>
+            </div>
+
+            <h3>Рабочих часов в день</h3>
+            <div class="button-row">
+                <button class="calc-button col-auto calc-button-2" value="6">
+                    6 часов
+                </button>
+                <button class="calc-button col-auto calc-button-active calc-button-2" value="8">
+                    8 часов
+                </button>
+            </div>
+
+            <h3>Ваш доход</h3>
+            <div class="button-row">
+                <div class="calc-result-block">
+                    <p>В неделю:</p>
+                    <p class="calc-button col-auto" id="weekField">
+                        32 000₽
+                    </p>
+                </div>
+                
+                <div class="calc-result-block">
+                    <p>В месяц:</p>
+                    <p class="calc-button col-auto" id="monthField">
+                        128 000₽
+                    </p>
+                </div>
+
+                <div class="calc-result-block">
+                    <p>В год:</p>
+                    <p class="calc-button col-auto" id="yearField">
+                        2 1536 000₽
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="block" id="block-5">
+            <div class="row align-items-center vh-block">
+                <div class="col-0 col-lg-8 d-none d-lg-block">
+                    <div class="image-container">
+                        <div class="image">
+
+                        </div>
+                        <div class="blur d-flex flex-column justify-content-between">
+                            <h1>РАБОТА<br>
+                                ВЕБ МОДЕЛЬЮ<br>
+                                <span>ЭТО ПРОСТО</span></h1>
+                            <h3>Заполни анкету<br>
+                                и <span>начни<br>
+                                зарабатывать</span></h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h1>Заполни анкету</h1>
+                    <p>И получи +5к к первой зарплате!</p>
+                    <form>
+                        <input type="name" placeholder="Имя*">
+                        <input type="tel" placeholder="8 (999) 999-99-99*" maxlength="11">
+                        <input type="text" placeholder="Немного о себе">
+                        <button class="form-button" type="submit">Отправить анкету</button>
+                    </form>
+                    <p class="subinfo">
+                        * Поля обязательные для заполнения<br>
+                        ** Заполняя анкету, Вы подтверждаете, что <span>Вам есть 18 лет</span><br>
+                        *** Заполняя анкету я <span>даю свое согласие</span> на обработку персональных данных и прочитал(а) Соглашение студии "Rich Bitch"
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="block" id="contacts">
+            <h1 style="text-align: center;">Контакты</h1>
+            <div class="row flex-column align-items-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <img src="img/logo.png">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <p style="text-align: center;">
+                        <a href="mailto:tdmaslov@mail.ru">tdmaslov@mail.ru</a>
+                        <a href="https://t.me/DmitryJX" target="_blank" class="tg-link">
+                            <svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 240 240"><defs><linearGradient id="linear-gradient" x1="120" y1="240" x2="120" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#800a7e"/><stop offset="1" stop-color="#38b0e3"/></linearGradient></defs><title>Telegram_logo</title><circle cx="120" cy="120" r="120" fill="url(#linear-gradient)"/><path d="M81.229,128.772l14.237,39.406s1.78,3.687,3.686,3.687,30.255-29.492,30.255-29.492l31.525-60.89L81.737,118.6Z" fill="#c8daea"/><path d="M100.106,138.878l-2.733,29.046s-1.144,8.9,7.754,0,17.415-15.763,17.415-15.763" fill="#a9c6d8"/><path d="M81.486,130.178,52.2,120.636s-3.5-1.42-2.373-4.64c.232-.664.7-1.229,2.1-2.2,6.489-4.523,120.106-45.36,120.106-45.36s3.208-1.081,5.1-.362a2.766,2.766,0,0,1,1.885,2.055,9.357,9.357,0,0,1,.254,2.585c-.009.752-.1,1.449-.169,2.542-.692,11.165-21.4,94.493-21.4,94.493s-1.239,4.876-5.678,5.043A8.13,8.13,0,0,1,146.1,172.5c-8.711-7.493-38.819-27.727-45.472-32.177a1.27,1.27,0,0,1-.546-.9c-.093-.469.417-1.05.417-1.05s52.426-46.6,53.821-51.492c.108-.379-.3-.566-.848-.4-3.482,1.281-63.844,39.4-70.506,43.607A3.21,3.21,0,0,1,81.486,130.178Z" fill="#fff"/></svg>
+                        </a>
+                    </p>
+                </div> 
+            </div>
+        </div>
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
