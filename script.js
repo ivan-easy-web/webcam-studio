@@ -1,51 +1,56 @@
 let baseWage = 1000
 
-let weekField = document.getElementById("weekField")
+$(window).on('load', function() {
 
-let monthField = document.getElementById("monthField")
+    let weekField = document.getElementById("weekField")
 
-let yearField = document.getElementById("yearField")
+    let monthField = document.getElementById("monthField")
 
-let calcHours = () => {
-    let activeButtons = document.getElementsByClassName("calc-button-active")
-    return(activeButtons[0].value * activeButtons[1].value)
-}
+    let yearField = document.getElementById("yearField")
 
-let printWage = (wage) => {
-    let millions = Math.floor(wage/1000000)
-    return `${(millions > 0)?millions:''} ${Math.floor(wage/1000)%1000} 000₽`
-}
+    let calcHours = () => {
+        let activeButtons = document.getElementsByClassName("calc-button-active")
+        return(activeButtons[0].value * activeButtons[1].value)
+    }
 
-let calc = () => {
-    let wage = baseWage * calcHours()
-    weekField.innerText = printWage(wage)
-    monthField.innerText = printWage(wage * 4)
-    yearField.innerText = printWage(wage * 4 * 12)
-}
+    let printWage = (wage) => {
+        let millions = Math.floor(wage/1000000)
+        return `${(millions > 0)?millions:''} ${Math.floor(wage/1000)%1000} 000₽`
+    }
 
-$('.calc-button-1').click(function() {
-    $('.calc-button-1').removeClass('calc-button-active')
-    $(this).addClass('calc-button-active')
+    let calc = () => {
+        let wage = baseWage * calcHours()
+        weekField.innerText = printWage(wage)
+        monthField.innerText = printWage(wage * 4)
+        yearField.innerText = printWage(wage * 4 * 12)
+    }
+
+    $('.calc-button-1').click(function() {
+        $('.calc-button-1').removeClass('calc-button-active')
+        $(this).addClass('calc-button-active')
+        calc()
+    });
+
+
+    $('.calc-button-2').click(function() {
+        $('.calc-button-2').removeClass('calc-button-active')
+        $(this).addClass('calc-button-active')
+        calc()
+    });
+
     calc()
+
+
+
+    let openMenu = () => {
+        $('#menu').fadeIn()
+    }
+
+    let closeMenu = () => {
+        $('#menu').fadeOut()
+    }
+
+    $('#menu a').click(() => {closeMenu()})
+
 });
-
-
-$('.calc-button-2').click(function() {
-    $('.calc-button-2').removeClass('calc-button-active')
-    $(this).addClass('calc-button-active')
-    calc()
-});
-
-calc()
-
-
-
-let openMenu = () => {
-    $('#menu').fadeIn()
-}
-
-let closeMenu = () => {
-    $('#menu').fadeOut()
-}
-
-$('#menu a').click(() => {closeMenu()})
+   
