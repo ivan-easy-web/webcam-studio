@@ -12,8 +12,8 @@ let calcHours = () => {
 }
 
 let printWage = (wage) => {
-    let millions = Math.round(wage/1000000)
-    return `${(millions > 0)?millions:''} ${Math.round(wage/1000)} 000₽`
+    let millions = Math.floor(wage/1000000)
+    return `${(millions > 0)?millions:''} ${Math.floor(wage/1000)%1000} 000₽`
 }
 
 let calc = () => {
