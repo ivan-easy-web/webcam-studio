@@ -157,7 +157,7 @@ span a {
 
 .top-block {
     border-radius: 20px;
-    background-image: url(img/main1.jpeg);
+    background-image: url(img/main.webp);
     background-size: cover;
     background-position-x: center;
     box-shadow: 0 0 16px 1px #d848e0;
@@ -342,7 +342,7 @@ input:focus {
 }
 
 .image-container .image{
-    background-image: url(img/calc.jpeg);
+    background-image: url(img/calc.webp);
     background-position-x: right;
     width: 80%;
     height: 90%;
