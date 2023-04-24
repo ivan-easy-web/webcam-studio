@@ -375,6 +375,13 @@ input:focus {
 }
 
 @media screen and (max-width: 575px) {
+    body {
+        background: linear-gradient(-75deg, #c03c94, #000000, #2e45a7, #070629, #c03c94, #000000, #2e45a7, #070629, #c03c94, #000000, #2e45a7, #070629);
+        background-size: 500% 500%;
+        animation: gradient 25s ease infinite;
+    }
+    
+
     .calc-result-block .calc-button {
         font-size: small;
     }
