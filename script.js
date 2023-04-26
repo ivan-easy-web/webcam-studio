@@ -1,8 +1,6 @@
 let baseWage = 1000
 
-$(window).on('load', function() {
-
-    let weekField = document.getElementById("weekField")
+let weekField = document.getElementById("weekField")
 
     let monthField = document.getElementById("monthField")
 
@@ -51,6 +49,3 @@ $(window).on('load', function() {
     }
 
     $('#menu a').click(() => {closeMenu()})
-
-});
-   

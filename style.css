@@ -1,8 +1,32 @@
-body {
+.main-body {
     color: white;
     background: linear-gradient(-45deg, #c03c94, #000000, #2e45a7, #070629, #c03c94, #000000, #2e45a7, #070629, #c03c94, #000000, #2e45a7, #070629);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
+}
+
+.full-page {
+    height: 100vh;
+}
+
+.success-block {
+    padding: 20px;
+}
+
+.success-block img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 16px 1px #d848e0;
+}
+
+.success-block .button{
+    margin-right: 0 !important;
+    width: fit-content;
+}
+
+.success-body {
+    color: white;
+    background-color: black !important;
 }
 
 h1, h2, h3, h4, h5, h6, .button {
@@ -408,6 +432,10 @@ input:focus {
     .top-fade {
         background-color: rgba(52, 0, 43, 0.545);
         border-radius: 0;
+    }
+
+    .success-block img{
+        width: 100%;
     }
 }
 
