@@ -49,10 +49,8 @@ $result = mail($to, $subject, $message, $headers);
             <div class="success-block">
                 <h1>Анкета отправлена успешно!</h1>
                 <p>В ближайшее время с вами <span>свяжется менеджер</span>.</p>
-                <img src="img/logo.webp">
-                <a class="button" href="https://richbitch.studio"><- Вернуться назад</a>
+                <a class="button s-item" href="https://richbitch.studio"><- Вернуться назад</a>
             </div>
             
         </div>
-    
 </body>
