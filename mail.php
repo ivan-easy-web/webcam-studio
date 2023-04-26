@@ -1,5 +1,5 @@
 <?php
-$to = "<tdmaslov@mail.ru>";
+$to = "tdmaslov@mail.ru";
 $subject = 'RichBitch - Новая анкета';
 $phone = $_POST['f-phone'];
 $name = $_POST["f-name"];
