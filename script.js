@@ -36,8 +36,6 @@ let weekField = document.getElementById("weekField")
         calc()
     });
 
-    calc()
-
 
 
     let openMenu = () => {
@@ -49,3 +47,26 @@ let weekField = document.getElementById("weekField")
     }
 
     $('#menu a').click(() => {closeMenu()})
+
+
+
+    let confirmAge = () => {
+        $('#confirmation-container').fadeOut()
+        localStorage.setItem("ageConfirmation", "confirmed")
+    }
+
+
+
+    $( document ).ready(function() {
+        calc()
+
+        let ageConfirmation = localStorage.getItem("ageConfirmation")
+        if (ageConfirmation == null) {
+            $('#confirmation-container').fadeIn()
+        }
+    });
+    
+
+
+
+   

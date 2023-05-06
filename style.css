@@ -462,3 +462,41 @@ p, ul, button, a {
 #contacts a:hover {
     text-decoration: underline;
 }
+
+.confirmation-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+    background-color: #00000054;
+}
+
+#confirmation-container {
+    display: none;
+}
+
+.confirmation {
+    background-color: black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 16px 1px #d848e0;
+    border: 1px solid #d848e0;
+    color: white;
+    max-width: 700px;
+}
+
+.confirmation button {
+    background-color: black;
+    border: 1px solid #d848e0;
+    color: white;
+    border-radius: 5px;
+    color: aqua;
+    font-size: x-large;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
